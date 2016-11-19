@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+body {
+	color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+a,
+a:focus {
+	outline: none;
+}
+
+.am-header {
+	position: relative;
+	margin-left: 20px;
+	left:20px;
+	/* text-align: center; */
+}
+
+.am-header a {
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.am-header a:hover,
+.am-header a:focus {
+	opacity: 1;
+}
+
+.am-header h1 {
+	margin: 0;
+	font-weight: 100;
+	/*
+	font-size: 2.625em;
+	line-height: 1.3;
+	*/
+}
+
+.am-header h1 span {
+	display: block;
+	padding: 0.4em 1em 1em;
+	font-size: 60%;
+}
+
+.am-links {
+	margin: 0;
+}
+
+.am-links a {
+	display: inline-block;
+	/* margin: 0 0.6em; */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 75%;
+	color:#e67e22;
+}
+
+.am-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'amicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.am-icon-drop:before {
+	content: "\e001";
+}
+
+.am-icon-prev:before {
+	content: "\e004";
+}
+
+
+.am-avatar-frame{
+	border: 2px solid #fff;	
+}
+.am-avatar-frame,.am-avatar-frame img{
+	width: 90px;
+	height: 90px;
+	-webkit-border-radius: 45px; /* Saf3+, Chrome */
+	border-radius: 45px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+	}
+	
+@media screen and (max-width: 30em) {
+	body {
+		font-size: 90%;
+	}
+}
+
+@media screen and (max-height: 29em) {
+	.container {
+		height: auto;
+	}
+	.am-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 100%;
+	}
+}
