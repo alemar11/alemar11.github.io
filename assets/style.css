@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+.pippo {
+    background-color: blue;
+
+}   
+.element {
+    color: var(--bs-primary-text);
+    background-color: var(--bs-primary-bg-subtle);
+  }
+}
