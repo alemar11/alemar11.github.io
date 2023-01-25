@@ -1,0 +1,21 @@
+{
+  "name": "www.alessandromarzoli.com",
+  "version": "1.0.0",
+  "description": "Alessandro Marzoli personal page",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemar11/alemar11.github.io.git"
+  },
+  "author": "Alessandro MARZOLI",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/alemar11/alemar11.github.io/issues"
+  },
+  "homepage": "https://github.com/alemar11/alemar11.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  }
+}
