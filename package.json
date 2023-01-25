@@ -15,7 +15,6 @@
   "homepage": "https://github.com/alemar11/alemar11.github.io#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1"
+    "bootstrap": "^5.3.0-alpha"
   }
 }

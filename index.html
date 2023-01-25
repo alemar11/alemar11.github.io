@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alessandro Marzoli</title>
   <meta name="keywords" content="Alessandro, Marzoli, developer" />
   <meta name="description"
@@ -19,32 +19,52 @@
 
 <body>
   <div class="container">
-    <div class="row text-center pt-5">
-      <div class="col">
-        <img src="assets/img/avatar.png" width="150" class="rounded-circle img-thumbnail" alt="Alessandro Marzoli pic">
+
+    <div class="row justify-content-md-center text-center pt-5">
+      <div class="col-md-auto">
+        <img src="https://www.gravatar.com/avatar/01024fed2bf545290f7a0ee8749cb875" width="150"
+          class="rounded-circle img-thumbnail" alt="Alessandro Marzoli pic" />
+        <!--<img src="assets/img/avatar.png" width="150" class="rounded-circle img-thumbnail" alt="Alessandro Marzoli pic">-->
         <h1 class="display-4 mt-5">Alessandro Marzoli</h1>
         <p class="lead">Lead iOS Software Engineer</p>
       </div>
     </div>
 
-    <div class="row text-center pt-5">
-      <div class="col">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/alessandro-marzoli"><i class="fa-brands fa-linkedin-in"></i></a>
+    <div class="row justify-content-md-center pt-5">
+      <div class="col-md-auto">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item border-0">
+            <a href="https://www.linkedin.com/in/alessandro-marzoli"><i class="h1 fa-brands fa-linkedin-in link-warning"></i></a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/alemar11"><i class="fa-brands fa-github"></i></a>
+          <li class="list-group-item border-0">
+            <a href="https://github.com/alemar11"><i class="h1 fa-brands fa-github link-warning"></i></a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/alemar11"><i class="fa-brands fa-mastodon"></i></a>
+          <li class="list-group-item border-0">
+            <a href="https://mastodon.social/@alemar11"><i class="h1 fa-brands fa-mastodon link-warning"></i></a>
           </li>
         </ul>
       </div>
+
     </div>
   </div>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function updateTheme() {
+      const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+    }
+
+    // Set theme on load
+    updateTheme()
+
+    // Update theme when the preferred scheme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
+  </script>
 </body>
 
 </html>
+
+<!-- 
+  https://codepen.io/lee-jongwoo/pen/JjBWRwE
+  remove pippo class
+-->
