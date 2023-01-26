@@ -1,10 +1,12 @@
-@media (prefers-color-scheme: dark) {
-.pippo {
-    background-color: blue;
+h1 { 
+  font-size: 50px !important;
+  font-weight: bolder !important;
+  /*font-size:30rem !important;*/
+}
 
-}   
-.element {
-    color: var(--bs-primary-text);
-    background-color: var(--bs-primary-bg-subtle);
-  }
+.fa-brands {
+  color: orange
+}
+.fa-brands:hover {
+  color: rgb(165, 108, 0);
 }
